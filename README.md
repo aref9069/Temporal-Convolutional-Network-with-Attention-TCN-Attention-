@@ -20,4 +20,5 @@ This repository provides a full pipeline for Remaining Useful Life (RUL) predict
 
 
 ⚙️ Requirements
+
 pip install numpy pandas scikit-learn tensorflow matplotlib
