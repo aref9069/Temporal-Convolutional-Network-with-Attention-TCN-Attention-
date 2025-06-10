@@ -3,13 +3,21 @@ This repository provides a full pipeline for Remaining Useful Life (RUL) predict
 
 
 📦 Features
+
 ✅ Clean ingestion of raw C-MAPSS files
+
 ✅ Normalization based on grouped operating conditions
+
 ✅ Piecewise linear RUL labeling 
+
 ✅ Sliding window sequence generation for deep models
+
 ✅ Training, evaluation, and logging of TCN-Attention model
+
 ✅ Model evaluation using RMSE, MAE, R², and NASA score
+
 ✅ Automatic visualizations and CSV result export
+
 
 ⚙️ Requirements
 pip install numpy pandas scikit-learn tensorflow matplotlib
