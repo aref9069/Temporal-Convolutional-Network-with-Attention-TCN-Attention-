@@ -1,15 +1,26 @@
 '''
-- Preprocess raw dataset 
+- This module provides utilities to load, validate, and clean NASA's
+C-MAPSS datasets for Remaining Useful Life (RUL) prediction tasks.
+It reads training data (run-to-failure), test data (non-failed units),
+and corresponding RUL labels, standardizes their formats, and outputs
+structured DataFrames for further preprocessing and modeling.
 
-ASSUMPTIONS: 
-    - user must have a familiarity with Time-series dataset
-    - this snippet was developed based on the data description
+FEATURES:
+---------
+- Supports FD001-FD004 sub-datasets via the `data_identifier` flag
+- Cleans raw files by selecting valid columns and assigning names
+- Sorts data by engine ID and cycle for consistent time ordering
+- Handles inconsistencies in truth files with multiple columns
+- Returns cleaned pandas DataFrames for train, test, and truth data
 
-USAGE:
+ASSUMPTIONS:
+------------
+- The dataset folder contains files in standard C-MAPSS naming format:
+    train_FD00X.txt, test_FD00X.txt, RUL_FD00X.txt
+- Each file follows a whitespace-delimited structure
+- All sensors and settings follow the predefined 26-column format
 
-   NASA C-MAPPS Dataset
-
-Aref Aasi, January 2024
+Aref Aasi, June 2024
 
 
 '''
