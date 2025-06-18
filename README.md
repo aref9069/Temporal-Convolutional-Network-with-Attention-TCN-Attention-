@@ -5,8 +5,7 @@ This repository provides a full pipeline for Remaining Useful Life (RUL) predict
 📦 Features
 
 ✅ Clean ingestion and parsing of raw C-MAPSS files  
-✅ Normalization grouped by operating conditions 
-
+✅ Normalization grouped by operating conditions  
 ✅ Capped RUL labeling using piecewise linear rules  
 ✅ Cumulative feature engineering for multi-condition datasets  
 ✅ Sliding-window sequence generation for sequence-to-one prediction  
